@@ -1,0 +1,61 @@
+
+
+
+    {{template "header" .}}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="../pub/css/style.css">
+    <link rel="stylesheet" href="../pub/css/apps.css">
+    <link rel="stylesheet" href="../pub/css/recipe.css"> -->
+    <link rel="stylesheet" href="/public/css/recipe.css">
+    <div class="recipe-app">
+
+
+
+        {{template "nav-main"}}
+
+        <div class="meal-container">
+            <header>
+                <input type="text" name="mealName" id="searchMeal" placeholder="Meals">
+                <button id="search" class="fas fa-search"></button>
+            </header>
+            <!-- Make these meal categories -->
+            <div class="fav-container">
+                <ul class="fav-meals">
+                    <li><img id="cat-name" class="category" src="https://www.themealdb.com/images/ingredients/Beef.png" alt="Beef">
+                        <span>Beef</span>
+                    </li>
+                    <li><img id="cat-name" class="category" src="https://www.themealdb.com/images/ingredients/Chicken.png" alt="Chicken">
+                        <span>Chicken</span>
+                    </li>
+                    <li><img id="cat-name" class="category" src="https://www.themealdb.com/images/ingredients/Salmon.png" alt="Seafood">
+                        <span>Seafood</span>
+                    </li>
+                    <!-- <li><img id="cat-name" class="category" src="https://www.themealdb.com/images/media/meals/1525876468.jpg/preview" alt="Side">
+                        <span>Side</span>
+                    </li> -->
+                    <li><img id="cat-name" class="fav-heart" src="/public/img/heart.png" alt="Favorites"> <!-- ../pub/img/heart.png" -->
+                        <span>Favorites</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="meals" id="meals">
+                <!-- insert Random / Named meal in the main window -->
+            </div>
+        </div>
+        <div class="popup-container hidden" id="meal-popup">
+            <div class="popup">
+                <button id="close-popup" class="close-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="meal-info" id="meal-info"></div>
+            </div>
+        </div>
+        
+        <script src="/public/js/recipe.js"></script>
+        <!-- <script src="../pub/js/recipe.js"></script> -->
+
+
+    </div>
+    {{template "footer"}}
+

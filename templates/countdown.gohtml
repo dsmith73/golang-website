@@ -1,0 +1,37 @@
+
+    {{template "header" .}}
+
+    <link rel="stylesheet" href="/public/css/count.css">
+
+    <h1>Countdown Timer</h1>
+
+    {{template "nav-main"}}
+
+    <h2>New Years Eve</h2>
+
+    <div class="countdown-container">
+        <div class="conttainer-el days-c">
+            <p class="big-text" id="days">0</p>
+            <span>Days</span>
+        </div>
+        <div class="conttainer-el hours-c">
+            <p class="big-text" id="hours">0</p>
+            <span>Hours</span>
+        </div>
+        <div class="conttainer-el mins-c">
+            <p class="big-text" id="mins">0</p>
+            <span>Minutes</span>
+        </div>
+        <div class="conttainer-el secs-c">
+            <p class="big-text" id="secs">0</p>
+            <span>Seconds</span>
+        </div>
+    </div>
+
+    <div class="kudos">
+        <span>Photo by <a href="https://unsplash.com/@rafaelnadai?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rafael De Nadai</a> on <a href="https://unsplash.com/s/photos/black-and-white?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    </div>
+    
+    <script src="/public/js/count.js"></script>
+
+    {{template "footer"}}
